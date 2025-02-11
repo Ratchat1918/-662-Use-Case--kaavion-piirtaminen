@@ -1,0 +1,21 @@
+#navbar{
+    text-align: center;
+    background-color: rgb(106, 0, 206);
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: auto;
+}
+body{
+    background-color: #ffbef4;
+}
+h1{
+    color: rgb(255, 254, 254);
+}
+#moderator_panel{
+    text-align: center;
+    margin-top: 10%;
+}
