@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Äänestyys sovellus</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <div id="navbar">
+        <nav>
+            <h1>Äänestyys sovellus</h1>
+        </nav>
+    </div>
+    <div id="rekisteröinti">
+        <h2>Rekisteröinti</h2>
+        <input id="nimi_registration" type="text" >
+        <input id="salasana_registration" type="text">
+        <div>
+            <label for="user_checkbox">Käyttäjä</label>
+            <input id="user_checkbox" type="checkbox">
+            <label for="admin_checkbox">Yllipitäjä</label>
+            <input id="admin_checkbox" type="checkbox">
+        </div>
+        <button id="registerBtn">Rekiströidä</button>
+    </div>
+    <div id="kirjautuminen">
+        <h2>Kirjautuminen</h2>
+        <div>
+            <input id="nimi_login" type="text" >
+            <input id="salasana_login" type="text">
+        </div>
+        <button id="loginBtn">Login</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
