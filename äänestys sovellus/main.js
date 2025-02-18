@@ -13,7 +13,8 @@ let user_sopiva_nimi=undefined;
 //current admin password and login
 let admin_sopiva_salasana=undefined;
 let admin_sopiva_nimi=undefined;
-
+//defining whether user sees moderator panel or not
+let  panel_visiblity;
 function Register(){
     if(document.getElementById("user_checkbox").checked===true){
         user_sopiva_nimi=nimi_registration.value;
@@ -35,7 +36,8 @@ function Login(){
     if(document.getElementById("user_checkbox").checked===true){
         if(nimi_login.value===user_sopiva_nimi && salasana_login.value===user_sopiva_salasana){
             window.alert("Kirjautuminen onnistui!");
-            window.location.href = "user_page.html";
+            panel_visiblity=false;
+            window.location.href = "admin_page.html";
         }else{
             window.alert("Kirjautuminen epäonnistui");
         }
@@ -43,6 +45,7 @@ function Login(){
     else if(document.getElementById("admin_checkbox").checked===true){
         if(nimi_login.value===admin_sopiva_nimi && salasana_login.value===admin_sopiva_salasana){
             window.alert("Kirjautuminen onnistui!");
+            panel_visiblity=true;
             window.location.href = "admin_page.html";
         }else{
             window.alert("Kirjautuminen epäonnistui");
@@ -53,11 +56,6 @@ function Login(){
 function unCheckOther(checked_box){//varmistaa ettei voi valita kaksi vaihtoehtoja samana aikana
     document.getElementById(checked_box).checked=false;
 }
-
-
-
-
-
 
 document.getElementById("user_checkbox").addEventListener("change", () => unCheckOther("admin_checkbox"));
 document.getElementById("admin_checkbox").addEventListener("change", () => unCheckOther("user_checkbox"));
