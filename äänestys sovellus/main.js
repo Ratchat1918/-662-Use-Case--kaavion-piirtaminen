@@ -36,7 +36,7 @@ function Login(){
         if(nimi_login.value===user_sopiva_nimi && salasana_login.value===user_sopiva_salasana){
             sessionStorage.setItem("Loged_as_user",true);
             window.alert("Kirjautuminen onnistui!");
-            window.location.href = "admin_page.html";
+            window.location.href = "poll.html";
         }else{
             window.alert("Kirjautuminen epäonnistui");
         }
@@ -45,7 +45,7 @@ function Login(){
         if(nimi_login.value===admin_sopiva_nimi && salasana_login.value===admin_sopiva_salasana){
             sessionStorage.setItem("Loged_as_user",false);
             window.alert("Kirjautuminen onnistui!");
-            window.location.href = "admin_page.html";
+            window.location.href = "poll.html";
         }else{
             window.alert("Kirjautuminen epäonnistui");
         }

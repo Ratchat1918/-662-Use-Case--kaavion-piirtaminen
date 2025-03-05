@@ -71,4 +71,3 @@ function Vote_Against(poll_id) {
 
 document.getElementById("create_poll").addEventListener("click", createPoll);
 document.getElementById("delete_poll").addEventListener("click", delete_poll);
-document.getElementById("delete_poll").addEventListener("click", delete_poll);
